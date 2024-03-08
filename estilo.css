@@ -24,7 +24,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 15px;
 }
 .contenedor-header header .logo a{
     font-family: 'Righteous';
