@@ -11,7 +11,7 @@ html{
 }
 /* MENU */
 .contenedor-header{
-    background: #1e2326;
+    background:#B0212E;
     position: fixed;
     width: 100%;
     top: 0;
@@ -29,7 +29,7 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #1CB698;
+    color: white;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -45,7 +45,7 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #1CB698;
+    color: yellow;
 }
 .nav-responsive{
     background-color: #1CB698;
@@ -66,7 +66,7 @@ html{
     align-items: center;
 }
 .inicio .contenido-banner{
-    padding: 30px;
+    padding: 33px;
     background-color: #1e2326;
     max-width: 350px;
     margin: auto;
@@ -75,7 +75,7 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 20px;
-    border: 10px solid #1CB698;
+    border: 10px solid #B0212E;
     display: block;
     width: 80%;
     margin: auto;
@@ -104,7 +104,7 @@ html{
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;
+    background-color: #B0212E;
 }
 .sobremi{
     background-color: #1e2326;
@@ -128,7 +128,7 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #1CB698;
+    color: #FF4B56;
     font-weight: bold;
 }
 .sobremi .fila{
@@ -151,11 +151,11 @@ html{
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: #1CB698;
+    color: #FF4B56;
     width: 130px;
 }
 .sobremi .fila .col ul li span{
-    background-color: #1CB698;
+    background-color: #B0212E;
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -176,12 +176,13 @@ html{
     justify-content: center;
     transition: .3s;
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #1CB698;
+    background-color: #B0212E;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
     margin-bottom: 10px;
 }
+
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
@@ -201,7 +202,7 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #B0212E;
     z-index: -1;
     transition: 1s;
 }
@@ -250,7 +251,7 @@ html{
     margin-bottom: 30px;
 }
 .skills .skill .progreso{
-    background-color: #1CB698;
+    background-color: #B0212E;
     position: absolute;
     top: 0;
     left: 0;
@@ -260,7 +261,7 @@ html{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #1CB698;
+    background-color: #B0212E;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -275,7 +276,7 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 75%;}
+    100%{width: 60%;}
 }
 
 .skills .skill .htmlcss{
@@ -284,7 +285,7 @@ html{
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 89%;}
+    100%{width: 98%;}
 }
 
 .skills .skill .photoshop{
@@ -293,7 +294,7 @@ html{
 }
 @keyframes photoshop {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 85%;}
 }
 
 .skills .skill .wordpress{
@@ -302,7 +303,7 @@ html{
 }
 @keyframes wordpress {
     0%{width: 0%;}
-    100%{width: 81%;}
+    100%{width: 73%;}
 }
 
 .skills .skill .drupal{
@@ -329,7 +330,7 @@ html{
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 92%;}
 }
 
 .skills .skill .creatividad{
@@ -347,7 +348,7 @@ html{
 }
 @keyframes dedicacion {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 91%;}
 }
 
 .skills .skill .proyect{
@@ -356,7 +357,7 @@ html{
 }
 @keyframes proyect {
     0%{width: 0%;}
-    100%{width: 94%;}
+    100%{width: 45%;}
 }
 /* SECCION CURRICULUM */
 .curriculum{
@@ -405,14 +406,14 @@ html{
     margin-bottom: 10px;
 }
 .curriculum .fila .item .casa{
-    color: #1CB698;
+    color: #FF4B56;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
 .curriculum .fila .item .fecha{
     display: block;
-    color: #1CB698;
+    color: #FF4B56;
     margin-bottom: 10px;
 }
 .curriculum .fila .item p{
