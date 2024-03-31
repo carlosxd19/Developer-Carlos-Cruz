@@ -112,6 +112,49 @@ html{
     transition: .3s;
 
 }
+#red{
+    position: relative;
+     bottom: 30px;
+    left: 30px;
+
+}
+#redd{
+    position: relative;
+     bottom: 50px;
+    left: -10px;
+
+}
+#red2{
+    position: relative;
+     bottom: 75px;
+    left: -60px;
+color: white;
+}
+
+#red3{
+    position: relative;
+     bottom: 100px;
+    left: 240px;
+color:#ADADAD;
+}
+#menus{
+    position: relative;
+    bottom: 50px;
+}
+#red4{
+    position: relative;
+     bottom: 20px;
+    left: -60px;
+    font-size: 20px;
+
+}
+#red5{
+    position: relative;
+     bottom: 70px;
+    left: 250px;
+    font-size: 20px;
+
+}
 .inicio .contenido-banner .redes a:hover{
     background-color: #B0212E;
 }
@@ -312,7 +355,7 @@ html{
 }
 @keyframes wordpress {
     0%{width: 0%;}
-    100%{width: 73%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .drupal{
@@ -321,7 +364,7 @@ html{
 }
 @keyframes drupal {
     0%{width: 0%;}
-    100%{width: 55%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .comunicacion{
@@ -773,17 +816,21 @@ footer{
     left: 0;
     height: fit-content;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: var(--dark);
     color: white;
-    background-color: #54090E;
+    opacity: 1;
+background-image: url('img/progra.jfif');
 }
 
 .copyright-container{
     width: 100%;
+    position: relative;
+    top:-10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -921,3 +968,9 @@ footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
     }
 }
 
+.imagen-redonda {
+    width: 100px; /* ajusta el tamaño según tus necesidades */
+    height: 100px; /* ajusta el tamaño según tus necesidades */
+    border-radius: 50%; /* hace que la imagen sea redonda */
+    overflow: hidden; /* oculta el contenido que se sale del área redonda */
+  }
