@@ -920,3 +920,10 @@ footer .social-link:nth-of-type(3){/*Nth of type inside that container*/
         border-bottom: none;
     }
 }
+
+.imagen-redonda {
+    width: 100px; /* ajusta el tamaño según tus necesidades */
+    height: 100px; /* ajusta el tamaño según tus necesidades */
+    border-radius: 50%; /* hace que la imagen sea redonda */
+    overflow: hidden; /* oculta el contenido que se sale del área redonda */
+  }
