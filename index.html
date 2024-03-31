@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Developer Carlos D. Cruz</title>
-
+<style>
+  .imagen-redonda {
+    width: 100px; /* ajusta el tamaño según tus necesidades */
+    height: 100px; /* ajusta el tamaño según tus necesidades */
+    border-radius: 50%; /* hace que la imagen sea redonda */
+    overflow: hidden; /* oculta el contenido que se sale del área redonda */
+  }
+</style>
    <link class="imagen-redonda" rel="icon" type="image/x-icon" href="img/cc6.ico">
     
         <link rel="stylesheet" href="estilo.css">
@@ -175,18 +182,18 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Visual Studio</span>
+                        <span>Word Press</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>73%</span>
+                                <span>90%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>SQL Server</span>
+                        <span>Visual Studio con SQL Server</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>55%</span>
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
@@ -371,16 +378,42 @@ en la computadora de la oficina.</p>
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <form id="contactForm" method="POST">
+                    <input type="text" placeholder="Tú Nombre" name="nombre" required>
+                    <input type="text" placeholder="Número telefónico" name="telefono" required>
+                    <input type="text" placeholder="Dirección de correo" name="email" required>
+                    <input type="text" placeholder="Tema"name="tema" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" name="mensaje" required></textarea>
                     <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane" type="submit" value="Enviar"></i>
                         <span class="overlay"></span>
+                        </form>
                     </button>
                 </div>
+
+                <script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Evitar el comportamiento predeterminado del formulario
+  
+  // Obtener datos del formulario
+  var formData = new FormData(this);
+  
+  // Enviar los datos utilizando AJAX
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "https://formspree.io/f/mbjnzpjd");
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      alert("Gracias por tu mensaje. Te responderemos pronto.");
+      document.getElementById("contactForm").reset();
+    } else {
+      alert("Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.");
+    }
+  };
+  xhr.send(formData);
+});
+</script>
                 <!-- Mapa -->
                 <div class="col">
                     <img src="img/ubicacion.png" alt="">
@@ -413,29 +446,34 @@ en la computadora de la oficina.</p>
         
             <div class="footer-content-container">
                 
-<div class="redes">
+<div id="red" class="redes">
                 <a href="https://www.facebook.com/profile.php?id=100068608061019"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/cdca_19/"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://twitter.com/T5xYt"><i class="fa-brands fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/carlos-avelar-07600a2b1/"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/carlosxd19" ><i class="fa-brands fa-github" ></i></a>
             </div>
-                <h3 class="website-logo">Krey Academy</h3>
-                <span class="footer-info">111 111 111</span>
-                <span class="footer-info">academy@itskrey.com</span>
+                <h3 id="redd" class="website-logo">¿Cómo puedo ayudarte?</h3>
+                <h3 id="red4" class="website-logo">Contacto</h3>
+                 <h3 id="red5" class="website-logo">Email</h3>
+                <span id="red2" class="footer-info">Telefono: +504 9740-2157 </span>
+                <span id="red3" lass="footer-info">carloscruz197527@gmail.com</span>
             </div>
-            <div class="footer-menus">
+            <div id="menus"class="footer-menus">
                 <div class="footer-content-container">
-                    <span class="menu-title">menu</span>
+                    <span class="menu-title">Menu</span>
                     <a href="#inicio"  class="menu-item-footer">Inicio</a>
-                    <a href="" class="menu-item-footer">Courses</a>
-                    <a href="" class="menu-item-footer">Testimonials</a>
+                    <a href="#sobremi" class="menu-item-footer">Sobre Mi</a>
+                    <a href="#skills" class="menu-item-footer">Habilidades</a>
+                    <a href="#curriculum"  class="menu-item-footer">Curriculum</a>
+                    <a href="#portfolio" class="menu-item-footer">Portafolio</a>
+                    <a href="#contacto" class="menu-item-footer">Contacto</a>
                 </div>
                 <div class="footer-content-container">
                     <span class="menu-title">legal</span>
-                    <a href="" class="menu-item-footer">Privacy Policy</a>
-                    <a href="" class="menu-item-footer">Cookies</a>
-                    <a href="" class="menu-item-footer">Legal Advice</a>
+                    <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement" class="menu-item-footer">Privacy Policy</a>
+                    <a href="https://docs.github.com/es/site-policy/privacy-policies/github-cookies" class="menu-item-footer">Cookies</a>
+                    <a href="https://github.com/topics/legal-ai" class="menu-item-footer">Legal Advice</a>
                 </div>
             </div>
             
@@ -443,7 +481,7 @@ en la computadora de la oficina.</p>
             </div>
         </div>
         <div class="copyright-container">
-            <span class="copyright">Copyright 2021, itskrey.com. All rights reserved.</span>
+            <span class="copyright">Copyright 2021, https://github.com/carlosxd19. All rights reserved.</span>
         </div>
     </footer>
     
